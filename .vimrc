@@ -7,7 +7,8 @@ nmap <F1> <nop>
 set incsearch
 set hlsearch
 set number
-
+set showcmd
+"Auto change from absolute to relative nu
 :augroup numbertoggle
 :  autocmd!
 :  autocmd BufEnter,FocusGained,InsertLeave,WinEnter * if &nu && mode() != "i" | set rnu   | endif
